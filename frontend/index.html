@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>What's next?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Google charts -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="generated.js"></script>
+    <script src="wasm-arrays.min.js"></script>
+    <script src="charts.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+	<h1>What’s Next?</h1>
+	<h6>A statistical regression tool predicting the cumulative number of cases of COVID-19</h6>
+      </div>
+    </header>
+
+    <!-- Charts -->
+    <div class="container">
+      <!-- World map -->
+      <h5 class="d-flex justify-content-center">A World Map Showing the Current Number of COVID-19 Cases for Each Country</h5>
+      <div class="container d-flex justify-content-center">
+	<div id="worldMap"></div>
+      </div>
+      <br>
+      <!-- Reset button for line graph and world map -->
+      <div class="container d-flex justify-content-end">
+	<button type="button" class="btn btn-primary" onClick="reset()">Reset Chart</button>
+      </div>
+      <!-- Line Graph -->
+      <div class="container d-flex justify-content-center">
+	<div id="lineGraph"></div>
+      </div>
+    </div>
+    <!-- Description -->
+    <article class="container">
+      <div class="container">
+	<h5>Who Are We and What We Built</h5>
+	<p>We are a team of Imperial College Computing students who gathered and analysed data generated for 200+ countries around the world.</p>
+	<p>Using our statistical model, we can predict what the number of coronavirus cases will be in 50 days for most countries across the globe.</p>
+      </div>
+      <br>
+      <div class="container">
+	<h5>How We Built It</h5>
+	<p>We built our frontend using HTML and JavaScript, the backend in C, and the interface between the two using WebAssembly.</p>
+	<p>For our statistical analysis, we used a logistic growth model as it is has been widely used to model previous pandemics; it reflects the exponential growth during the early stages of an epidemic and tends towards a limit that represents the later stages. We calculated the values of our parameters to best fit existing data and utilised them to predict future cases.</p>
+	<p>However, due to inaccuracies in our data arising from testing processes and levels of responses varying greatly between countries, our prediction may not be accurate for countries across different stages of the pandemic.</p>
+	<br>
+      </div>
+    </article>
+    <br>
+    <!-- Footer -->
+    <footer class="jumbotron jumbotron-fluid">
+      <div class="container">
+	<div class="row">
+	  <div class="col-sm">
+	    <h6>Developers:</h6>
+	    <p>Alexander Goncharov (<a href="mailto:ag2719@ic.ac.uk">ag2719@ic.ac.uk</a>)<br>
+	      Hyunhoi (Philip) Koo (<a href="mailto:hk619@ic.ac.uk">hk619@ic.ac.uk</a>)<br>
+	      Jia Qi Poon (<a href="mailto:jqp18@ic.ac.uk">jqp18@ic.ac.uk</a>)<br>
+	      Richard Yang (<a href="mailto:ry819@ic.ac.uk">ry819@ic.ac.uk</a>)</p>
+	  </div>
+	  <div class="col-sm text-right">
+	    <h6>Model Inspired by:</h6>
+	    <p><a href="https://arxiv.org/pdf/2003.05681.pdf">Logistics curve</a><br>
+	      <a href="https://www.telegraph.co.uk/global-health/science-and-disease/what-r-value-means-coronavirus-lockdown-uk-rising/">The R-value we used</a></p>
+	    <h6>Libraries Used:</h6>
+	    <p><a href="https://getbootstrap.com/">Bootstrap 4</a><br>
+	      <a href="https://developers.google.com/chart">Google Charts</a><br>
+	      <a href="https://github.com/emscripten-core/emscripten">Emscripten: An LLVM-to-Web Compiler</a><br>
+	      <a href="https://github.com/DanRuta/wasm-arrays">wasm-arrays</a></p>
+	  </div>
+	</div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
