@@ -1,4 +1,4 @@
-# What’s Next? - Predicting the Spread of the Coronavirus 12
+# What’s Next? - Predicting the Spread of the Coronavirus 1
 
 ## Introduction
 
