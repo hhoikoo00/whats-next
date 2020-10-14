@@ -2,6 +2,8 @@
 
 ## Introduction
 
+> ***Winner of the "Most Interesting Extensions" Award 2020.***
+
 This project was developed as an Extension of the First Year C Project for the Computing students of Imperial College London. The group members were Hyunhoi Koo ([hk619@ic.ac.uk](mailto:hk619@ic.ac.uk)), Jia Qi Poon ([jqp18@ic.ac.uk](mailto:jqp18@ic.ac.uk)), Alexander Goncharov ([ag2719@ic.ac.uk](mailto:ag2719@ic.ac.uk)) and Richard Yang ([ry819@ic.ac.uk](mailto:ry819@ic.ac.uk)).
 
 For this project, we first developed a statistical regression tool in C that predicts the growth of a pandemic using logistic curves. We wrapped this library around a website frontend and created this web program, which shows a prediction of the trend of cumulative number of coronavirus cases with the actual cumulative number of cases.
